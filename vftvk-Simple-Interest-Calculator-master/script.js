@@ -4,15 +4,14 @@ function compute()
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
     var interest = principal * years * rate / 100;
+     //logic to convert the "No. of Years" int actual year in the future.
+    // This can be done by adding the number of years "years" to the current
+    // year
+    var year = new Date().getFullYear() + parseInt(years);
     var amount = parseInt(principal) + parseFloat(interest);
     var result = document.getElementByIdmentById("result");
 
-    //logic to convert the "No. of Years" int actual year in the future.
-    // This can be done by adding the number of years "years" to the current
-    // year
-
-    var year = new Date().getFullYear() + parseInt(years);
-
+   
     // add validation for the "principal" input box. 
     // If a user enters zero or a negative value, 
     // show an alert which says "Enter a positive number"
