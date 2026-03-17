@@ -8,9 +8,8 @@ function compute()
     // This can be done by adding the number of years "years" to the current
     // year
     var year = new Date().getFullYear() + parseInt(years);
-    var amount = parseInt(principal) + parseFloat(interest);
-    var result = document.getElementByIdmentById("result");
-
+    var amount = parseFloat(principal) + parseFloat(interest);
+    var result = document.getElementById("result");
    
     // add validation for the "principal" input box. 
     // If a user enters zero or a negative value, 
@@ -24,7 +23,7 @@ function compute()
         document.getElementById("principal").focus();
     }
     else {
-        result.innerHTML = "If you deposit $" + "<mark>" + principal + ",\<br\>at an interest rate of " + "<mark>" + rate + "%\<br\>You will receive an amount of $" + "<mark>" + amount + ",\<br\>in the year " + "<mark>" + year + "\<br\>";
+        result.innerHTML = "If you deposit $" + "<mark/>" + principal + ",\<br\>at an interest rate of " + "<mark/>" + rate + "%\<br\>You will receive an amount of $" + "<mark/>" + amount + ",\<br\>in the year " + "<mark/>" + year + "\<br\>";
     }
 }
 
