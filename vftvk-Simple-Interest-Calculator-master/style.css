@@ -1,19 +1,19 @@
 body {
     background-color:black;
     font-family: arial;
-    color: white;
+    color: rgb(90, 71, 71);
 }
 h1 {
-    color:grey;
+    color:rgb(77, 36, 131);
     font-family: verdana;
 }
 /* Create an entry for class 'maindiv' */
 .maindiv {
-    background-color: white;
+    background-color: rgb(49, 161, 152);
     color: black;
     width: 300px;
     padding: 20px;
-    border-radius: 25px;
+    border-radius: 75px;
     text-align: center;
 }
 
